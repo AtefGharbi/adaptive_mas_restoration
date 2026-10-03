@@ -1,0 +1,650 @@
+{
+  "coalition_log": [
+    {
+      "a": [
+        "G1-diesel"
+      ],
+      "b": [
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.24497865721430903,
+      "solve_s": 14.06476616859436,
+      "gap": 0.009336066339155825
+    },
+    {
+      "a": [
+        "G1-diesel"
+      ],
+      "b": [
+        "BESS1"
+      ],
+      "feasible": true,
+      "dJ": 0.12994045053884073,
+      "solve_s": 6.358872890472412,
+      "gap": 2.6265725215470725e-05
+    },
+    {
+      "a": [
+        "G1-diesel"
+      ],
+      "b": [
+        "BESS2"
+      ],
+      "feasible": true,
+      "dJ": 0.13155388934134338,
+      "solve_s": 2.3541479110717773,
+      "gap": 0.0005728873964782401
+    },
+    {
+      "a": [
+        "G2-microturbine"
+      ],
+      "b": [
+        "BESS1"
+      ],
+      "feasible": true,
+      "dJ": 0.12358962668558149,
+      "solve_s": 2.1344752311706543,
+      "gap": 0.0024585760023742628
+    },
+    {
+      "a": [
+        "G2-microturbine"
+      ],
+      "b": [
+        "BESS2"
+      ],
+      "feasible": true,
+      "dJ": 0.11466601918044629,
+      "solve_s": 1.1932752132415771,
+      "gap": 0.0
+    },
+    {
+      "merged": [
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "dJ": 0.24497865721430903
+    },
+    {
+      "a": [
+        "BESS1"
+      ],
+      "b": [
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.015351271815894685,
+      "solve_s": 45.008689403533936,
+      "gap": 0.0098417785222315
+    },
+    {
+      "a": [
+        "BESS2"
+      ],
+      "b": [
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.011419014918874898,
+      "solve_s": 120.2192051410675,
+      "gap": 0.037041880008375654
+    },
+    {
+      "merged": [
+        "BESS1",
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "dJ": 0.015351271815894685
+    },
+    {
+      "a": [
+        "BESS2"
+      ],
+      "b": [
+        "BESS1",
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.014807888163113292,
+      "solve_s": 75.1780514717102,
+      "gap": 0.009760263188579811
+    },
+    {
+      "merged": [
+        "BESS1",
+        "BESS2",
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "dJ": 0.014807888163113292
+    }
+  ],
+  "ica": {
+    "label": "ICA, nearest-reference candidates",
+    "RL_pct": 21.600710217850995,
+    "RC_pct": 25.531914893617017,
+    "ENS_kWh": 2912.5336154068355,
+    "served_kWh_by_tier": {
+      "1": 120.0,
+      "2": 0.0,
+      "3": 682.5
+    },
+    "served_kW_at_end": 820.0,
+    "T1_buses_restored": [
+      14
+    ],
+    "N_sw": 3,
+    "T_init_min": 0,
+    "T_crit_min": null,
+    "n_islands": 4,
+    "solve_s_sum": 11.981677532196045,
+    "solve_s_max": 11.501567840576172,
+    "max_gap": 0.009897667096252578,
+    "graph_ok": true,
+    "dwell_violations": 0,
+    "ev_departure_ok": true,
+    "ac": {
+      "feasible": true,
+      "n_redispatch": 12,
+      "n_shed": 0,
+      "shed_kWh": 0.0,
+      "ac_loss": 1.6783156143831224,
+      "model_loss": 2.3405889960350628,
+      "vmin": 0.9499937342016032,
+      "vmax": 0.9580252766034271,
+      "max_loading": 0.13916837258051723
+    },
+    "storage_discharge_kWh": 156.1
+  },
+  "coalition": {
+    "label": "ICA + coalition rule (25)",
+    "RL_pct": 46.9847801436015,
+    "RC_pct": 100.0,
+    "ENS_kWh": 1969.5154176652043,
+    "served_kWh_by_tier": {
+      "1": 470.0,
+      "2": 1235.5,
+      "3": 40.0
+    },
+    "served_kW_at_end": 1632.3,
+    "T1_buses_restored": [
+      7,
+      14,
+      31
+    ],
+    "N_sw": 8,
+    "T_init_min": 0,
+    "T_crit_min": 0,
+    "n_islands": 1,
+    "solve_s_sum": 75.1780514717102,
+    "solve_s_max": 75.1780514717102,
+    "max_gap": 0.009760263188579811,
+    "graph_ok": true,
+    "dwell_violations": 0,
+    "ev_departure_ok": true,
+    "ac": {
+      "feasible": true,
+      "n_redispatch": 0,
+      "n_shed": 0,
+      "shed_kWh": 0.0,
+      "ac_loss": 1.4301867882812846,
+      "model_loss": 1.9236270734225684,
+      "vmin": 0.9499915361116349,
+      "vmax": 0.9549172408164635,
+      "max_loading": 0.15266428855874611
+    },
+    "storage_discharge_kWh": 340.7
+  },
+  "central": {
+    "label": "Centralized multi-island MILP",
+    "RL_pct": 46.67102450221278,
+    "RC_pct": 100.0,
+    "ENS_kWh": 1981.171439742795,
+    "served_kWh_by_tier": {
+      "1": 470.0,
+      "2": 1169.1,
+      "3": 94.8
+    },
+    "served_kW_at_end": 1557.7,
+    "T1_buses_restored": [
+      7,
+      14,
+      31
+    ],
+    "N_sw": 11,
+    "T_init_min": 0,
+    "T_crit_min": 0,
+    "n_islands": 1,
+    "solve_s_sum": 600.6530334949493,
+    "solve_s_max": 600.6530334949493,
+    "max_gap": 0.08126909951928483,
+    "graph_ok": true,
+    "dwell_violations": 0,
+    "ev_departure_ok": true,
+    "ac": {
+      "feasible": true,
+      "n_redispatch": 0,
+      "n_shed": 0,
+      "shed_kWh": 0.0,
+      "ac_loss": 1.1206211143745601,
+      "model_loss": 1.6149241627771063,
+      "vmin": 0.9499786297976183,
+      "vmax": 0.958278687096162,
+      "max_loading": 0.1336592648471919
+    },
+    "info": {
+      "status": "Optimal",
+      "highs_status": "Time limit reached",
+      "mip_gap": 0.08126909951928483,
+      "build_s": 0.7827420234680176,
+      "solve_s": 600.6530334949493,
+      "nvars": 12564,
+      "ncons": 39040,
+      "obj": 0.20104210217453475
+    },
+    "storage_discharge_kWh": 404.3
+  },
+  "ablation": {
+    "label": "ICA + coalition, V6 normalization",
+    "RL_pct": 33.97761678107989,
+    "RC_pct": 100.0,
+    "ENS_kWh": 2452.731536582882,
+    "served_kWh_by_tier": {
+      "1": 470.0,
+      "2": 745.5,
+      "3": 46.7
+    },
+    "served_kW_at_end": 1254.2,
+    "T1_buses_restored": [
+      7,
+      14,
+      31
+    ],
+    "N_sw": 7,
+    "T_init_min": 0,
+    "T_crit_min": 0,
+    "n_islands": 2,
+    "solve_s_sum": 120.35314655303955,
+    "solve_s_max": 120.2371597290039,
+    "max_gap": 0.013566810766292759,
+    "graph_ok": true,
+    "dwell_violations": 0,
+    "ev_departure_ok": true,
+    "ac": {
+      "feasible": true,
+      "n_redispatch": 42,
+      "n_shed": 7,
+      "shed_kWh": 97.9999545921939,
+      "ac_loss": 1.5374192078838462,
+      "model_loss": 2.7931727277113145,
+      "vmin": 0.9499874334525769,
+      "vmax": 0.9643206619826151,
+      "max_loading": 0.1555111554648171
+    },
+    "storage_discharge_kWh": 0.0
+  },
+  "ablation_log": [
+    {
+      "a": [
+        "G1-diesel"
+      ],
+      "b": [
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.24237723321781093,
+      "solve_s": 11.571177959442139,
+      "gap": 0.009988263140621142
+    },
+    {
+      "a": [
+        "G1-diesel"
+      ],
+      "b": [
+        "BESS1"
+      ],
+      "feasible": true,
+      "dJ": 0.13010849506910066,
+      "solve_s": 4.243295907974243,
+      "gap": 0.0007247358604524482
+    },
+    {
+      "a": [
+        "G1-diesel"
+      ],
+      "b": [
+        "BESS2"
+      ],
+      "feasible": true,
+      "dJ": 0.12923193658394938,
+      "solve_s": 1.0921378135681152,
+      "gap": 0.004325779445428674
+    },
+    {
+      "a": [
+        "G2-microturbine"
+      ],
+      "b": [
+        "BESS1"
+      ],
+      "feasible": true,
+      "dJ": 0.12107700206033925,
+      "solve_s": 2.1722826957702637,
+      "gap": 0.0066230272344689695
+    },
+    {
+      "a": [
+        "G2-microturbine"
+      ],
+      "b": [
+        "BESS2"
+      ],
+      "feasible": true,
+      "dJ": 0.11817187841797645,
+      "solve_s": 1.7839915752410889,
+      "gap": 7.607620879348301e-05
+    },
+    {
+      "merged": [
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "dJ": 0.24237723321781093
+    },
+    {
+      "a": [
+        "BESS1"
+      ],
+      "b": [
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.014022105525577061,
+      "solve_s": 78.2506697177887,
+      "gap": 0.009999942644427953
+    },
+    {
+      "a": [
+        "BESS2"
+      ],
+      "b": [
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.015495184394055062,
+      "solve_s": 120.2371597290039,
+      "gap": 0.013566810766292759
+    },
+    {
+      "merged": [
+        "BESS2",
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "dJ": 0.015495184394055062
+    },
+    {
+      "a": [
+        "BESS1"
+      ],
+      "b": [
+        "BESS2",
+        "G1-diesel",
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.002584234600264884,
+      "solve_s": 49.13834881782532,
+      "gap": 0.00863593269997312
+    }
+  ],
+  "cc": {
+    "label": "ICA + coalition, chance-constrained eps=0.05",
+    "RL_pct": 21.160488992788192,
+    "RC_pct": 100.0,
+    "ENS_kWh": 2928.8878339179187,
+    "served_kWh_by_tier": {
+      "1": 470.0,
+      "2": 316.1,
+      "3": 0.0
+    },
+    "served_kW_at_end": 670.0,
+    "T1_buses_restored": [
+      7,
+      14,
+      31
+    ],
+    "N_sw": 7,
+    "T_init_min": 0,
+    "T_crit_min": 0,
+    "n_islands": 1,
+    "solve_s_sum": 120.42989444732666,
+    "solve_s_max": 120.42989444732666,
+    "max_gap": 0.01796707004510069,
+    "graph_ok": true,
+    "dwell_violations": 0,
+    "ev_departure_ok": true,
+    "ac": {
+      "feasible": true,
+      "n_redispatch": 13,
+      "n_shed": 1,
+      "shed_kWh": 14.722222222222221,
+      "ac_loss": 1.5862542884428015,
+      "model_loss": 1.7156423903933737,
+      "vmin": 0.9499693093711173,
+      "vmax": 0.9693172817085517,
+      "max_loading": 0.2232036602029569
+    }
+  },
+  "mc": {
+    "deterministic": {
+      "indep": {
+        "max": 0.60075,
+        "mean": 0.5139666666666667,
+        "n": 12
+      },
+      "adverse": {
+        "max": 0.53235,
+        "mean": 0.5042541666666668,
+        "n": 12
+      },
+      "student_t": {
+        "max": 0.62065,
+        "mean": 0.5185083333333332,
+        "n": 12
+      }
+    },
+    "chance_constrained": {
+      "indep": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 12
+      },
+      "adverse": {
+        "max": 0.0,
+        "mean": 0.0,
+        "n": 12
+      },
+      "student_t": {
+        "max": 0.0001,
+        "mean": 3.7500000000000003e-05,
+        "n": 12
+      }
+    }
+  },
+  "trip_log": [
+    {
+      "a": [
+        "G2-microturbine"
+      ],
+      "b": [
+        "BESS1"
+      ],
+      "feasible": true,
+      "dJ": 0.22828166021181612,
+      "solve_s": 12.694449186325073,
+      "gap": 0.005773390738482639
+    },
+    {
+      "a": [
+        "G2-microturbine"
+      ],
+      "b": [
+        "BESS2"
+      ],
+      "feasible": true,
+      "dJ": 0.2263807861128741,
+      "solve_s": 19.313832759857178,
+      "gap": 0.00974126662079395
+    },
+    {
+      "merged": [
+        "BESS1",
+        "G2-microturbine"
+      ],
+      "dJ": 0.22828166021181612
+    },
+    {
+      "a": [
+        "BESS2"
+      ],
+      "b": [
+        "BESS1",
+        "G2-microturbine"
+      ],
+      "feasible": true,
+      "dJ": 0.002026223330794774,
+      "solve_s": 120.2649085521698,
+      "gap": 0.01947973827840966
+    }
+  ],
+  "trip_collapsed": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "trip_after": {
+    "label": "after G1 trip (t0 = 30 min)",
+    "RL_pct": 32.96101988172616,
+    "RC_pct": 100.0,
+    "ENS_kWh": 2490.4981113938734,
+    "served_kWh_by_tier": {
+      "1": 470.0,
+      "2": 410.0,
+      "3": 344.5
+    },
+    "served_kW_at_end": 1150.0,
+    "T1_buses_restored": [
+      7,
+      14,
+      31
+    ],
+    "N_sw": 8,
+    "T_init_min": 0,
+    "T_crit_min": 0,
+    "n_islands": 2,
+    "solve_s_sum": 22.31427264213562,
+    "solve_s_max": 12.694449186325073,
+    "max_gap": 0.009988031439822216,
+    "graph_ok": true,
+    "dwell_violations": 0,
+    "ev_departure_ok": true,
+    "ac": {
+      "feasible": true,
+      "n_redispatch": 0,
+      "n_shed": 0,
+      "shed_kWh": 0.0,
+      "ac_loss": 3.7702042748440756,
+      "model_loss": 4.969777973233153,
+      "vmin": 0.9499790107946161,
+      "vmax": 0.9606715309573187,
+      "max_loading": 0.2009228504451829
+    }
+  },
+  "trip_before_at_t6_by_tier_kW": {
+    "1": 470.0,
+    "2": 1250.0,
+    "3": 60.0
+  },
+  "trip_after_by_interval_by_tier_kW": {
+    "1": [
+      470.0,
+      470.0,
+      470.0,
+      470.0,
+      470.0,
+      470.0,
+      470.0,
+      470.0,
+      470.0,
+      470.0,
+      470.0,
+      470.0
+    ],
+    "2": [
+      410.0,
+      410.0,
+      410.0,
+      410.0,
+      410.0,
+      410.0,
+      410.0,
+      410.0,
+      410.0,
+      410.0,
+      410.0,
+      410.0
+    ],
+    "3": [
+      404.1,
+      455.0,
+      466.3,
+      423.4,
+      390.2,
+      375.0,
+      270.0,
+      270.0,
+      270.0,
+      270.0,
+      270.0,
+      270.0
+    ]
+  }
+}

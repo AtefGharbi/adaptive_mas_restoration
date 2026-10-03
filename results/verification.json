@@ -1,0 +1,184 @@
+{
+  "V1": {
+    "two_bus": {
+      "P_gen_kW": 150.8006279434851,
+      "load_kW": 150.00000000000003,
+      "loss_est_kW": 0.8006279434850867,
+      "flow_kW": 150.40031397174255,
+      "gen_minus_load_minus_loss": -2.0599841277224584e-17,
+      "flow_minus_load_minus_half_loss": -1.0299920638612292e-17
+    },
+    "residual_17_max": 2.7755575615628914e-17
+  },
+  "V2": {
+    "uniform": {
+      "max_underestimate": 0.0,
+      "rel_overestimate_at_flow_fraction": {
+        "0.05": 4.0000000000000036,
+        "0.10": 1.5000000000000018,
+        "0.25": 0.0,
+        "0.50": 0.0,
+        "1.00": 0.0
+      },
+      "max_abs_overestimate": 0.015625
+    },
+    "quadratic": {
+      "max_underestimate": 0.0,
+      "rel_overestimate_at_flow_fraction": {
+        "0.05": 0.2500000000000009,
+        "0.10": 0.5625000000000024,
+        "0.25": 0.0,
+        "0.50": 0.0625,
+        "1.00": 0.0
+      },
+      "max_abs_overestimate": 0.047851560000000015
+    }
+  },
+  "V3": {
+    "inscribed_cos_factor": {
+      "max_vertex_S_over_Smax": 1.0000000000000002
+    },
+    "tangent_no_factor": {
+      "max_vertex_S_over_Smax": 1.0352761804100832
+    },
+    "Mp": 12,
+    "unused_rating_in_facet_direction": 0.03407417371093169
+  },
+  "V4": {
+    "single_island": {
+      "instances": 150,
+      "all_components_valid": 150,
+      "with_cycle": 0,
+      "with_wrong_root_count": 0
+    },
+    "multi_island": {
+      "instances": 100,
+      "all_components_valid": 100,
+      "with_cycle": 0,
+      "with_wrong_root_count": 0
+    },
+    "without_flow_14": {
+      "instances": 60,
+      "all_components_valid": 26,
+      "with_cycle": 34,
+      "with_wrong_root_count": 34
+    }
+  },
+  "V5": {
+    "examples": [
+      {
+        "T_dep_min": 4,
+        "n_e": 1,
+        "boundary_time_min": 0,
+        "available_intervals": [],
+        "ok": true
+      },
+      {
+        "T_dep_min": 5,
+        "n_e": 2,
+        "boundary_time_min": 5,
+        "available_intervals": [
+          1
+        ],
+        "ok": true
+      },
+      {
+        "T_dep_min": 10,
+        "n_e": 3,
+        "boundary_time_min": 10,
+        "available_intervals": [
+          1,
+          2
+        ],
+        "ok": true
+      },
+      {
+        "T_dep_min": 12,
+        "n_e": 3,
+        "boundary_time_min": 10,
+        "available_intervals": [
+          1,
+          2
+        ],
+        "ok": true
+      },
+      {
+        "T_dep_min": 60,
+        "n_e": 13,
+        "boundary_time_min": 60,
+        "available_intervals": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "ok": true
+      }
+    ],
+    "solved": {
+      "status": "Optimal",
+      "soc_initial": 0.612,
+      "soc_required": 0.6,
+      "soc_required_effective": 0.6,
+      "soc_at_boundary_3": 0.6,
+      "ev_charge_kW": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "u_ev": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ev_discharge_kW": [
+        8.21,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "served_kW": [
+        13.19,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    }
+  },
+  "V6": {
+    "history": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "Nsw": 3,
+    "switch_states_t1_to_t5": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "violations": 0,
+    "expected_first_closure": 3
+  }
+}
